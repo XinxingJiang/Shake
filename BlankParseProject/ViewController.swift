@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController {
     
@@ -68,6 +69,9 @@ class ViewController: UIViewController {
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake {
+            // vibrate, make sure your cell phone is not in silence mode
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            
             // generate a random numebr
             if let randomNumber = MathUtil.randomNumber(low:Constants.LowerBound, high: Constants.HighBound) {
                 label.text = "\(Constants.LabelTextReslt) \(randomNumber)"
