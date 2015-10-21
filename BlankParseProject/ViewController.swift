@@ -27,19 +27,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()        
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
-    
     // MARK: - Init label
     
     private func initLabel() {
