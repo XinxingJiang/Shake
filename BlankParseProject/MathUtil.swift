@@ -20,7 +20,7 @@ class MathUtil {
     // generate a random integer in range [low, high]
     class func randomNumber(low low: Int, high: Int) -> Int? {
         if low < high {
-            return Int(arc4random()) % (high - low + 1) + low
+            return Int(arc4random_uniform(UInt32(high))) + low
         }
         return nil
     }
