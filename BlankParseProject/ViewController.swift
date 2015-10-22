@@ -8,8 +8,11 @@
 
 import UIKit
 import AudioToolbox
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var audioPlayer: AVAudioPlayer!
     
     // MARK: - Subviews
     
@@ -21,10 +24,19 @@ class ViewController: UIViewController {
         super.loadView()
         self.view.backgroundColor = Constants.BackgtoundColor
         initLabel()
+        audioPlayer = AVAudioPlayer()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()        
+        
+        do {
+            let soundURL = NSBundle.mainBundle().URLForResource(Constants.SoundName, withExtension: Constants.SoundExtension)
+            audioPlayer = try AVAudioPlayer(contentsOfURL: soundURL!)
+            audioPlayer.prepareToPlay()
+        } catch {
+            print("oops")
+        }
     }
     
     // MARK: - Init label
@@ -51,6 +63,7 @@ class ViewController: UIViewController {
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake {
             label.text = Constants.LabelTextDynamic
+            audioPlayer.play()
         }
     }
     
@@ -63,6 +76,9 @@ class ViewController: UIViewController {
             if let randomNumber = MathUtil.randomNumber(low:Constants.LowerBound, high: Constants.HighBound) {
                 label.text = "\(Constants.LabelTextReslt) \(randomNumber)"
             }
+            
+            audioPlayer.stop()
+            audioPlayer.currentTime = 0
         }
     }
     
@@ -78,6 +94,9 @@ class ViewController: UIViewController {
         
         static let LowerBound = 1
         static let HighBound = 10
+        
+        static let SoundName = "Beijing"
+        static let SoundExtension = "mp3"
     }
 }
 

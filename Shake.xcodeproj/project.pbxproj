@@ -32,6 +32,7 @@
 		B779B6DE1BCF19E100242E88 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B779B6DD1BCF19E100242E88 /* libz.tbd */; };
 		B779B6E01BCF19E900242E88 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B779B6DF1BCF19E900242E88 /* libsqlite3.tbd */; };
 		B7C05BA01BD7FB120071769F /* MathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C05B9F1BD7FB120071769F /* MathUtil.swift */; settings = {ASSET_TAGS = (); }; };
+		B7DFBF491BD9705B00584627 /* Beijing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7DFBF481BD9705B00584627 /* Beijing.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		B779B6DD1BCF19E100242E88 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B779B6DF1BCF19E900242E88 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B7C05B9F1BD7FB120071769F /* MathUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtil.swift; sourceTree = "<group>"; };
+		B7DFBF481BD9705B00584627 /* Beijing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beijing.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				B779B6A11BCF18EA00242E88 /* Info.plist */,
 				B779B69E1BCF18EA00242E88 /* LaunchScreen.storyboard */,
 				B779B6961BCF18EA00242E88 /* Main.storyboard */,
+				B7DFBF4A1BD9727000584627 /* Musics */,
 			);
 			name = SupportingFiles;
 			path = BlankParseProject;
@@ -243,6 +246,14 @@
 				B7C05B9F1BD7FB120071769F /* MathUtil.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		B7DFBF4A1BD9727000584627 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFBF481BD9705B00584627 /* Beijing.mp3 */,
+			);
+			name = Musics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +363,7 @@
 				B779B6A01BCF18EA00242E88 /* LaunchScreen.storyboard in Resources */,
 				B779B69D1BCF18EA00242E88 /* Assets.xcassets in Resources */,
 				B779B6981BCF18EA00242E88 /* Main.storyboard in Resources */,
+				B7DFBF491BD9705B00584627 /* Beijing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
