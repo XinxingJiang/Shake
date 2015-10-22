@@ -10,7 +10,7 @@
 		B779B6931BCF18EA00242E88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779B6921BCF18EA00242E88 /* AppDelegate.swift */; };
 		B779B6951BCF18EA00242E88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779B6941BCF18EA00242E88 /* ViewController.swift */; };
 		B779B6981BCF18EA00242E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B779B6961BCF18EA00242E88 /* Main.storyboard */; };
-		B779B69B1BCF18EA00242E88 /* BlankParseProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B779B6991BCF18EA00242E88 /* BlankParseProject.xcdatamodeld */; };
+		B779B69B1BCF18EA00242E88 /* ShakeProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B779B6991BCF18EA00242E88 /* ShakeProject.xcdatamodeld */; };
 		B779B69D1BCF18EA00242E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B779B69C1BCF18EA00242E88 /* Assets.xcassets */; };
 		B779B6A01BCF18EA00242E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B779B69E1BCF18EA00242E88 /* LaunchScreen.storyboard */; };
 		B779B6AB1BCF18EA00242E88 /* BlankParseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779B6AA1BCF18EA00242E88 /* BlankParseProjectTests.swift */; };
@@ -57,7 +57,7 @@
 		B779B6921BCF18EA00242E88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B779B6941BCF18EA00242E88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B779B6971BCF18EA00242E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B779B69A1BCF18EA00242E88 /* BlankParseProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlankParseProject.xcdatamodel; sourceTree = "<group>"; };
+		B779B69A1BCF18EA00242E88 /* ShakeProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShakeProject.xcdatamodel; sourceTree = "<group>"; };
 		B779B69C1BCF18EA00242E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B779B69F1BCF18EA00242E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B779B6A11BCF18EA00242E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,10 +127,10 @@
 		B779B6861BCF18EA00242E88 = {
 			isa = PBXGroup;
 			children = (
-				B779B6911BCF18EA00242E88 /* BlankParseProject */,
+				B779B6911BCF18EA00242E88 /* ShakeProject */,
 				B779B6C31BCF18FB00242E88 /* SupportingFiles */,
-				B779B6A91BCF18EA00242E88 /* BlankParseProjectTests */,
-				B779B6B41BCF18EA00242E88 /* BlankParseProjectUITests */,
+				B779B6A91BCF18EA00242E88 /* ShakeProjectTests */,
+				B779B6B41BCF18EA00242E88 /* ShakeProjectUITests */,
 				B779B6901BCF18EA00242E88 /* Products */,
 				B779B6CC1BCF197700242E88 /* Frameworks */,
 			);
@@ -146,7 +146,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B779B6911BCF18EA00242E88 /* BlankParseProject */ = {
+		B779B6911BCF18EA00242E88 /* ShakeProject */ = {
 			isa = PBXGroup;
 			children = (
 				B779B6E11BCF1B7D00242E88 /* Models */,
@@ -155,24 +155,27 @@
 				B779B6E41BCF1B8F00242E88 /* Constants */,
 				B779B6E51BCF1B9500242E88 /* Utils */,
 			);
+			name = ShakeProject;
 			path = BlankParseProject;
 			sourceTree = "<group>";
 		};
-		B779B6A91BCF18EA00242E88 /* BlankParseProjectTests */ = {
+		B779B6A91BCF18EA00242E88 /* ShakeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
 				B779B6AA1BCF18EA00242E88 /* BlankParseProjectTests.swift */,
 				B779B6AC1BCF18EA00242E88 /* Info.plist */,
 			);
+			name = ShakeProjectTests;
 			path = BlankParseProjectTests;
 			sourceTree = "<group>";
 		};
-		B779B6B41BCF18EA00242E88 /* BlankParseProjectUITests */ = {
+		B779B6B41BCF18EA00242E88 /* ShakeProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
 				B779B6B51BCF18EA00242E88 /* BlankParseProjectUITests.swift */,
 				B779B6B71BCF18EA00242E88 /* Info.plist */,
 			);
+			name = ShakeProjectUITests;
 			path = BlankParseProjectUITests;
 			sourceTree = "<group>";
 		};
@@ -181,7 +184,7 @@
 			children = (
 				B779B6921BCF18EA00242E88 /* AppDelegate.swift */,
 				B779B69C1BCF18EA00242E88 /* Assets.xcassets */,
-				B779B6991BCF18EA00242E88 /* BlankParseProject.xcdatamodeld */,
+				B779B6991BCF18EA00242E88 /* ShakeProject.xcdatamodeld */,
 				B779B6A11BCF18EA00242E88 /* Info.plist */,
 				B779B69E1BCF18EA00242E88 /* LaunchScreen.storyboard */,
 				B779B6961BCF18EA00242E88 /* Main.storyboard */,
@@ -389,7 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B779B6951BCF18EA00242E88 /* ViewController.swift in Sources */,
-				B779B69B1BCF18EA00242E88 /* BlankParseProject.xcdatamodeld in Sources */,
+				B779B69B1BCF18EA00242E88 /* ShakeProject.xcdatamodeld in Sources */,
 				B7C05BA01BD7FB120071769F /* MathUtil.swift in Sources */,
 				B779B6931BCF18EA00242E88 /* AppDelegate.swift in Sources */,
 			);
@@ -673,13 +676,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B779B6991BCF18EA00242E88 /* BlankParseProject.xcdatamodeld */ = {
+		B779B6991BCF18EA00242E88 /* ShakeProject.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B779B69A1BCF18EA00242E88 /* BlankParseProject.xcdatamodel */,
+				B779B69A1BCF18EA00242E88 /* ShakeProject.xcdatamodel */,
 			);
-			currentVersion = B779B69A1BCF18EA00242E88 /* BlankParseProject.xcdatamodel */;
-			path = BlankParseProject.xcdatamodeld;
+			currentVersion = B779B69A1BCF18EA00242E88 /* ShakeProject.xcdatamodel */;
+			path = ShakeProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
