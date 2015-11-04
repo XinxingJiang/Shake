@@ -13,6 +13,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
+    var flashLight: AVCaptureDevice!
     
     // MARK: - Subviews
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = Constants.BackgtoundColor
         initLabel()
         audioPlayer = AVAudioPlayer()
+        flashLight = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     }
     
     override func viewDidLoad() {
@@ -64,6 +66,17 @@ class ViewController: UIViewController {
         if motion == .MotionShake {
             label.text = Constants.LabelTextDynamic
             audioPlayer.play()
+            
+            // turn on flash light if possible
+            if flashLight.hasTorch {
+                do {
+                    try flashLight.lockForConfiguration()
+                    flashLight.torchMode = AVCaptureTorchMode.On
+                    flashLight.unlockForConfiguration()
+                } catch {
+                    print(error)
+                }
+            }
         }
     }
     
@@ -79,6 +92,17 @@ class ViewController: UIViewController {
             
             audioPlayer.stop()
             audioPlayer.currentTime = 0
+            
+            // turn off flash light if possible
+            if flashLight.hasTorch {
+                do {
+                    try flashLight.lockForConfiguration()
+                    flashLight.torchMode = AVCaptureTorchMode.Off
+                    flashLight.unlockForConfiguration()
+                } catch {
+                    print(error)
+                }
+            }
         }
     }
     
